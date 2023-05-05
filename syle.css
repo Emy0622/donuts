@@ -1,0 +1,38 @@
+/* reset */
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    gap: 2px;
+    grid-area: body
+    "header, header, header"
+    "main, main, main"
+    "footer, footer, footer";
+    height: 500px;
+    width: 1fr;
+
+}
+
+main {
+    grid-area: main;
+    background-color: aquamarine;
+
+    height: 1fr;
+    width: 1fr;
+}
+
+header {
+    grid-area: header;
+    background-color: cornflowerblue;
+}
+
+.img {
+
+    height: 18px;
+    width: 18px;
+}
