@@ -1,38 +1,162 @@
-/* reset */
-
-* {
-
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    gap: 2px;
-    grid-area: body
-    "header, header, header"
-    "main, main, main"
-    "footer, footer, footer";
-    height: 500px;
-    width: 1fr;
-
-}
-
-main {
-    grid-area: main;
-    background-color: aquamarine;
-
-    height: 1fr;
-    width: 1fr;
-}
-
-header {
-    grid-area: header;
-    background-color: cornflowerblue;
-}
-
-.img {
-
-    height: 18px;
-    width: 18px;
-}
+            /* reset */
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            ul,
+            ol,
+            li {
+                list-style: none;
+            }
+            
+            body {
+                gap: 2px;
+                grid-area: body "header, header, header" "main, main, main" "footer, footer, footer";
+                height: 500px;
+                width: 1fr;
+                /* overflow: hidden; */
+            }
+            
+            header {
+                grid-area: header;
+                background-color: #F9F9F9;
+                height: 100px;
+                width: 1500px;
+            }
+            
+            main {
+                grid-area: main;
+                background-color: #F9F9F9;
+                height: 450px;
+                width: 1500px;
+                background-image: url(https://wallpaperaccess.com/full/1230653.jpg);
+                background-size: cover;
+            }
+            
+            footer {
+                grid-area: footer;
+                background-color: #F9F9F9;
+                height: 50px;
+                width: 1500px;
+            }
+            
+            .Inicio {
+                position: absolute;
+                width: 60px;
+                height: 18px;
+                left: 650px;
+                top: 32px;
+                font-family: 'Jos';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 20px;
+                color: #000000;
+            }
+            
+            .Novidades {
+                position: absolute;
+                width: 60px;
+                height: 18px;
+                left: 710px;
+                top: 27px;
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 29px;
+                color: #000000;
+            }
+            
+            .Sobre {
+                position: absolute;
+                width: 90px;
+                height: 18px;
+                left: 800px;
+                top: 27px;
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 29px;
+                color: #000000;
+            }
+            
+            .Cardápio {
+                position: absolute;
+                width: 95px;
+                height: 18px;
+                left: 890px;
+                top: 27px;
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 29px;
+                color: #000000;
+            }
+            
+            .Contato {
+                position: absolute;
+                width: 75px;
+                height: 18px;
+                left: 970px;
+                top: 27px;
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 29px;
+                color: #000000;
+            }
+            
+            .Reserva {
+                position: absolute;
+                width: 177px;
+                height: 29px;
+                left: 1065px;
+                top: 27px;
+                font-family: 'Jost';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 29px;
+                /* identical to box height */
+                color: #000000;
+            }
+            
+            .area {
+                position: absolute;
+                width: 150px;
+                height: 50px;
+                left: 1050px;
+                top: 17px;
+                background: #D9D9D9;
+                border-radius: 100px;
+            }
+            
+            .home {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                left: 620px;
+                top: 30px;
+            }
+            
+            .icon {
+                position: absolute;
+                width: 80px;
+                height: 60px;
+                left: 44px;
+                top: 8px;
+                border-radius: 100px;
+            }
+            
+            .transparente {
+                width: 100vw;
+                height: 100vh;
+                background-color: tomato;
+            }
