@@ -14,9 +14,9 @@
             
             body {
                 gap: 2px;
-                grid-area: body "header, header, header" "main, main, main" "footer, footer, footer";
-                height: 500px;
-                width: 1fr;
+                grid-template-areas: "header header header" "main main main" "footer footer footer";
+                height: 100vh;
+                /* width: 1fr; */
                 /* overflow: hidden; */
             }
             
@@ -24,23 +24,35 @@
                 grid-area: header;
                 background-color: #F9F9F9;
                 height: 100px;
-                width: 1500px;
             }
             
             main {
+                background-color: tomato;
                 grid-area: main;
                 background-color: #F9F9F9;
-                height: 450px;
-                width: 1500px;
                 background-image: url(https://wallpaperaccess.com/full/1230653.jpg);
                 background-size: cover;
+                width: 100vw;
+                height: 80vh;
+            }
+            
+            .redesociais {
+                position: absolute;
+                display: grid;
+                scroll-padding-left: 200px;
+                grid-area: icons;
+                place-content: center;
+                gap: 32px;
+                background-color: blueviolet;
+                border-radius: 5px;
+                width: 50px;
+                height: 120px;
             }
             
             footer {
                 grid-area: footer;
                 background-color: #F9F9F9;
                 height: 50px;
-                width: 1500px;
             }
             
             .Inicio {
@@ -154,9 +166,19 @@
                 top: 8px;
                 border-radius: 100px;
             }
+            /* main{
+
+            display: grid;
+            place-items: center start;
+            grid-template-columns: 1fr 100px;
+            grid-template-areas: "logo icons" "logo icons";
+            width: 90vw;} */
             
-            .transparente {
-                width: 100vw;
-                height: 100vh;
-                background-color: tomato;
+            main {
+                display: flex;
+                justify-content: flex-end;
+            }
+            
+            .redesociais img {
+                width: 24px;
             }
