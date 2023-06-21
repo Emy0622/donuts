@@ -1,220 +1,121 @@
-            /* reset */
-            
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            
-            ul,
-            ol,
-            li {
-                list-style: none;
-            }
-            
-            body {
-                gap: 2px;
-                grid-template-areas: "header header header" "main main main" "footer footer footer";
-                height: 100vh;
-                /* width: 1fr; */
-                /* overflow: hidden; */
-            }
-            
-            header {
-                grid-area: header;
-                background-color: #F9F9F9;
-                height: 100px;
-                display: flex;
-            }
+reset
 
-            ul{
-                justify-content: center;
-                align-items: center;
-                display: flex;
-                height: 100%;
-            }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-            header div{
-                display: flex;
-                width: 48.5%;
-                justify-content: space-between;
-                align-items: center;
-            }
+ul,
+ol,
+li {
+    list-style: none;
+}
 
-            .casinho{
-                height: 25%;
-                position: relative;
-                bottom: 10%;
-            }
+body {
+    gap: 2px;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    font-family: 'Jost', sans-serif;
+}
 
-            .logo{
-                height: 80%;
-            }
+header {
+    background-color: #F9F9F9;
+    display: flex; 
+    justify-content: space-between;
+    padding-top: 24px;
+}
 
-            
-            main {
-                grid-area: main;
-                background-color: #F9F9F9;
-                background-color: black;
-                background: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.322)),
-                url('https://wallpaperaccess.com/full/1230653.jpg');
-                /*background-image: url(https://wallpaperaccess.com/full/1230653.jpg);*/
-                background-size: cover;
-                width: 100vw;
-                height: 80vh;
-                display: flex; 
-                align-items: center ;
-                justify-content: space-between;
-            }
+header .containerE{
+    display: flex;
+    padding-left: 16px;
+}
 
-        h1{
-            position: relative;
-            color: #F9F9F9;
-            font-size: 5rem;
-            font-family: 'Josefin Sans', sans-serif;
-            padding-left: 20%;
-        }
-            
-            .redesociais {
-                display: flex;
-                flex-direction: column;
-                grid-area: icons;
-                background-color: #D9D9D9;
-                width: 50px;
-                height: 35%;
-                align-items: center;
-                gap: 10%;
-            }
+.casinho{
+    height: 25%;
+    padding-top: 5px;
+}
 
-            .redesociais div{
-                height: 17%;
-            }
-            .redesociais div img{
-                height: 100%;
+.logo{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    background-image: url(./img/donuts.jpg);
+    background-size: cover; 
+    background-position: center;
+}
 
-            }
-            
-            
-            .Inicio {
-                position: absolute;
-                width: 60px;
-                height: 18px;
-                left: 650px;
-                top: 32px;
-                font-family: 'Jos';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 20px;
-                color: #000000;
-            }
-            
-            .Novidades {
-                position: absolute;
-                width: 60px;
-                height: 18px;
-                left: 710px;
-                top: 27px;
-                font-family: 'Jost';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 29px;
-                color: #000000;
-            }
-            
-            .Sobre {
-                position: absolute;
-                width: 90px;
-                height: 18px;
-                left: 800px;
-                top: 27px;
-                font-family: 'Jost';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 29px;
-                color: #000000;
-            }
-            
-            .Cardápio {
-                position: absolute;
-                width: 95px;
-                height: 18px;
-                left: 890px;
-                top: 27px;
-                font-family: 'Jost';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 29px;
-                color: #000000;
-            }
-            
-            .Contato {
-                position: absolute;
-                width: 75px;
-                height: 18px;
-                left: 970px;
-                top: 27px;
-                font-family: 'Jost';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 15px;
-                line-height: 29px;
-                color: #000000;
-            }
-            
-            .Reserva {
-                position: absolute;
-                width: 177px;
-                height: 29px;
-                left: 1065px;
-                top: 27px;
-                font-family: 'Jost';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 13px;
-                line-height: 29px;
-                /* identical to box height */
-                color: #000000;
-            }
-            
-            .area {
-                position: absolute;
-                width: 150px;
-                height: 50px;
-                left: 1050px;
-                top: 17px;
-                background: #D9D9D9;
-                border-radius: 100px;
-            }
-            
-            .home {
-                position: absolute;
-                width: 20px;
-                height: 20px;
-                left: 620px;
-                top: 30px;
-            }
-            
-            .icon {
-                position: absolute;
-                width: 80px;
-                height: 60px;
-                left: 44px;
-                top: 8px;
-                border-radius: 100px;
-            }
-            /* main{
+header .containerD {
+    display: flex;
+    justify-content: start;
+    gap: 12px;
+    padding-right: 16px;
+    font-size: 'b';
+}
 
-            display: grid;
-            place-items: center start;
-            grid-template-columns: 1fr 100px;
-            grid-template-areas: "logo icons" "logo icons";
-            width: 90vw;} */
-            
-            main {
-                display: flex;
-                justify-content: flex-end;
-            }
+ul{
+    justify-content: start;
+    display: flex;
+    gap: 12px;
+    padding-left: 0;
+}
+
+.Reserva {
+    width: 150px;
+    height: 50px;
+    background: #D9D9D9;
+    border-radius: 100px;
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+main {
+    background: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.322)),
+    url('https://wallpaperaccess.com/full/1230653.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    position: relative;
+}
+
+h1{
+position: relative;
+color: #F9F9F9;
+font-size: 5rem;
+font-family: 'Lilita One', cursive;
+font-size: 64px;
+line-height: 73px;
+width: 50%;
+text-align: center;
+
+}
+
+
+
+.redesociais {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    width: 50px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 0px;
+    top: 50%;
+}
+
+.redesociais img{
+    height: 32px;
+}
+
+
